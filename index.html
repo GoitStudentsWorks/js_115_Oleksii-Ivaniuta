@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/js_115_Oleksii-Ivaniuta/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextGen-Crew JS Team Project</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/js_115_Oleksii-Ivaniuta/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/js_115_Oleksii-Ivaniuta/assets/vendor-BROpcVw8.js">
+  <link rel="stylesheet" crossorigin href="/js_115_Oleksii-Ivaniuta/assets/vendor-iVTW80dr.css">
+  <link rel="stylesheet" crossorigin href="/js_115_Oleksii-Ivaniuta/assets/index-BgcKeywB.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+  <div class="container">
+    <a href="./index.html" class="header--logo">Lloyd<span class="header--logo-sub">Jefferson.</span></a>
+    <nav>
+      <div class="theme-btn-container header-theme">
+        <button class="theme-auto-set-btn" type="button">A</button>
+        <button class="theme-toggle-btn" type="button">M</button>
+      </div>
+      <ul class="header--nav-list">
+        <li class="header--nav--list-item">
+          <a href="#about-me" class="header--nav--list-link">About me</a>
+        </li>
+        <li class="header--nav--list-item">
+          <a href="#my-projects" class="header--nav--list-link">Projects</a>
+        </li>
+        <li class="header--nav--list-item">
+          <a href="#work-together" class="header--nav--list-link">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <button type="button" class="header--open-menu" aria-label="open menu button">
+      <svg class="header--burger-icon" data-menu-open width="32" height="32">
+        <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-Vector"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+
+  <main>
+    <!-- Loads the specified .html file -->
+    <div class="mobile-menu" data-menu>
+  <div class="menu-header">
+    <a href="#" class="logo">
+      LLOYD<span class="logo-accent">JEFFERSON.</span>
+    </a>
+    <div class="containermobailmenu theme-btn-container">
+      <button class="theme-auto-set-btn" type="button">A</button>
+      <button class="theme-toggle-btn" type="button">M</button>
+    </div>
+    <button class="menu-close" data-menu-close>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M24 8L8 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M8 8L24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-content">
+    <picture class="decor-top">
+      <source srcset="data:image/webp;base64,UklGRhADAABXRUJQVlA4WAoAAAAQAAAAPwEACAEAQUxQSNAAAAABgJBtb9xGEMSgglAIhlAIYlAzqCGUgcpgEAIlEALh32Vn9/6eiogJkH+lo1+Fs20gHvTxgUYasb6k/9P/t4e3C4DKHAeAuOYqbxpzRM1M0v93YbcLgMocB4C45ipvGnNEzUzS/9ej9jRNU2GOA0Dc8pGduyt10v8Pnc/ozkoaDG4e9Jl7i5JGrauSCHT0K2naQDzo4wONNGJ9eSjQsbLy5bQm0n/fsK058kXKSiVM+j/9n/5P/6f/f+t9RByog7eba67ljTKnuHuR9H/6/646VlA4IBoCAAAQIwCdASpAAQkBPpFIoEwlpCMiItsIGLASCWlu4XasB0+q62JzCmz+WL7d5xv6Bzin6AbwD9J/149+rpAP8z5s3sAeQB6RvsT/uf6R+rc+AP4B+EFN+g1BuD/n/tVktldGuPZjaPeVezdu9rOXjcH/P9DIQNPqeVezg/5/8+uSf8ZARyiDmnaPeVezg/5/ooYlvBaLHvKvZwf8/+fs4P+Uboa1/+fs4P+fBMoeuTY1k8q9nB/z/S+uTejcq9lrLyQyGNHg16wRJ42r2cH+RAbOXjcFljVGArBnB/z/5+zg+TNza4KwZwf8/+fs4P+f/P2cH/P/n7OD/n/z9nB/z/5+zg+UnciZV//P2cH/P/n1ycvG4P+f/P2cH/P/n7OD/lAAAP7/vA/n6904fd8dg6cUifQ8RiwuB//ZN//9aFhG/jekz/qRHORbqVNgfb0BmpYGVm4gEo/c6AAfwABV7vJFXeBwseutaHB6sBhwcyQ7bYS4j4bevPEbSAx+Hfx9jFu5uj7/xgPn0rasaeljDIC0p9yV/ETpjOnxodb47AP8JX1GSAj9esASHbbCXEpMdzIIdegvUHp1TjIGPWEP0MKCq2s/yhUZtW4XMq1R7ulBn2ekfqXHu7NKAgrCnvlf9i75r8VQ4BOIv9/CEbZ20MB0JAgVlIHDHP+RwJ1Lu2nYaaNqziy0AAABW09a1OntP4vJFNCssAAAAAAA" type="image/webp" />
+      <img src="./img/mobile-menu/Group68.png" alt="Group68" loading="lazy" />
+    </picture>
+
+    <nav>
+      <ul>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#my-projects">Projects</a></li>
+        <li><a href="#work-together">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <picture class="decor-bottom">
+      <source srcset="data:image/webp;base64,UklGRggCAABXRUJQVlA4WAoAAAAQAAAAqQAAgwAAQUxQSJEAAAABcBTbbt0YghjEEARBEALBEAKlDGQGhWIID0IhvI28SqL+24iYgHKSgzGkpJfz5bMJJjfJj9RYyt//HxNXANckdZJ84qm7b0n66VjNJEkXkiNJnSQeUiNJtbWmSfoJdAXgSeok+cRTd9+S9Pf/G2QdiD0/xvlnE51hfzIQ+1GVarHszzg/rAN976sz5KeoxXJyAFZQOCBQAQAAkBEAnQEqqgCEAD6RSKBLJaSjIaNcyQCwEglnbuFxMPnCroQKY/5AsADnANwB+kH6k+gB2AH9V/sHWAegB+oHpSexd+2vpVatKJnAFlhRR8s6L8pqIA3UXKKT8td+Hs+4uGg8Ttf2VRlcSiAc6VBWdShH2kmzWVt4uG5xlA/JW3Fw3PkLIQb82BANzQggCeR9FUZ8J1AA/v9mY0/FNJ7/82FV3/9ECZDsWxd9prLFW//jmuPqoTTfY3jsaquMxorcf9zigRLMqJg+/0tFJip/vOSdzf9eVNLr/o3Co9UlIQlMkNOCScyVYLN7pS8dN/7znCuncDh8leStUo5/goNAz2Sp4UzvP9HiKrM4AA5P8uSb1/8NMzcAo7D+vz1jvbtcPQrX/AQ4YA/+VdS/8t+10GCxk2Jq/DJhheBm6NIWDSeUtgtUX6SvowpXEPQAAAAA" type="image/webp" />
+      <img src="./img/mobile-menu/Group64.png" alt="Group64" loading="lazy" />
+    </picture>
+  </div>
+</div>
+    <section id="hero" class="hero section">
+  <div class="container">
+    <picture>
+      <source srcset="/js_115_Oleksii-Ivaniuta/assets/decor_bg-desk-B4qOblZu.png" media="(min-width: 1280px)" />
+      <source srcset="/js_115_Oleksii-Ivaniuta/assets/decor_bg-tablet-CmwZ9M0i.png" media="(min-width: 768px)" />
+      <img src="/js_115_Oleksii-Ivaniuta/assets/decog_bg-kjNDP7KY.png" alt="back drop" class="hero--bg" />
+    </picture>
+    <div class="hero--wrapper">
+      <h1 class="hero--title">
+        Hello, I am
+        <span class="hero--title-sub">Fullstack developer</span>
+      </h1>
+      <img src="/js_115_Oleksii-Ivaniuta/assets/hero_desk-CiyUZ3LN.webp" srcset="/js_115_Oleksii-Ivaniuta/assets/hero_desk-CiyUZ3LN.webp 1x, /js_115_Oleksii-Ivaniuta/assets/hero_desk@2x-BtZHqMxW.webp 2x"
+        alt="Lloyd Jefferson" width="592" height="444" />
+    </div>
+    <div class="hero--lower-box">
+      <div class="hero--btn">
+        <svg class="hero--icon" width="30" height="16">
+          <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-green"></use>
+        </svg>
+        <a href="#work-together" class="hero--link">Order the project</a>
+      </div>
+      <p class="hero--text">
+        I work with people all over the world to create
+        <span class="hero--title-sub">impressive</span> and
+        <span class="hero--title-sub">functional websites</span>
+        that reflect each client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <div class="hero--links-bar">
+    <ul class="hero--links-list">
+      <li>
+        <a href="https://www.instagram.com/goitclub/ " class="hero--socials-links" target="_blank">Instagram</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/goITclub/ " class="hero--socials-links" target="_blank">Facebook</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/school/goit-start-your-career-in-it " class="hero--socials-links" target="_blank">Linkedin</a>
+      </li>
+      <li>
+        <a href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+          class="hero--socials-links" target="_blank">GitHub</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="about-me" class="about-me-section">
+    <div class="container">
+        <h2 class="about-me-header">ABOUT <span class="about-me-span-me">ME</span></h2>
+        <div class="about-me-container">
+            <div class="about-me-picture-container">
+                <picture>
+                    <source srcset="/js_115_Oleksii-Ivaniuta/assets/about-me-desk-CGFrTJij.webp 1x, /js_115_Oleksii-Ivaniuta/assets/about-me-desk@2x-DVMfrKwz.webp 2x"
+                        media="(min-width: 1280px)" />
+                    <source srcset="/js_115_Oleksii-Ivaniuta/assets/about-me-tab-ButPSY4i.webp 1x, /js_115_Oleksii-Ivaniuta/assets/about-me-tab@2x-DULDV0Ur.webp 2x"
+                        media="(min-width: 768px)" />
+                    <source srcset="/js_115_Oleksii-Ivaniuta/assets/about-me-phone-Bfb0RChZ.webp 1x, /js_115_Oleksii-Ivaniuta/assets/about-me-phone@2x-Dg62-wCG.webp 2x"
+                        media="(max-width: 767px)" />
+                    <img src="/js_115_Oleksii-Ivaniuta/assets/about-me-phone-Bfb0RChZ.webp" alt="Man with laptop" />
+                </picture>
+            </div>
+            <div class="about-me-descr-cont about-me-bio">
+                <h3 class="about-me-h3">BIO</h3>
+                <p class="about-me-article about-me-bio-p1">I'm Lloyd Jefferson, a talented programmer specializing<span
+                        class="about-me-bio-p1-span"></span> in
+                    software
+                    development. My expertise spans various programming
+                    languages and technologies, and I am dedicated to continually enhancing my skills. I thrive on
+                    seeking unconventional
+                    and creative solutions to problems, leveraging a high level of analytical skills to effectively
+                    tackle even the most
+                    challenging tasks.</p>
+                <p class="about-me-article about-me-bio-p2 about-me-bg-cont">Adaptable to both independent and
+                    team-oriented work, I
+                    collaborate
+                    seamlessly with colleagues, exchanging ideas and
+                    finding optimal solutions. My professional maturity enables me to navigate challenges and stressful
+                    situations with a
+                    calm demeanor, maintaining a consistently high quality of work. Committed to self-improvement, I
+                    actively engage in
+                    studying new technologies and practices to stay current with the<span
+                        class="about-me-bio-p2-span"></span> latest innovations in the field.
+                </p>
+            </div>
+            <div class="about-me-descr-cont">
+                <h3 class="about-me-h3">EDUCATION</h3>
+                <ul class="about-me-article about-me-ul">
+                    <li class="about-me-li">2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York</li>
+                    <li class="about-me-li">2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
+                    </li>
+                    <li class="about-me-li">2020 - 2022 / Advanced Blender Animation Techniques, Udemy</li>
+                </ul>
+            </div>
+            <div class="about-me-descr-cont">
+                <h3 class="about-me-h3">ROLE</h3>
+                <ul class="about-me-article about-me-ul">
+                    <li class="about-me-li">Frontend development</li>
+                    <li class="about-me-li">HeadlessCMS, Wordpress</li>
+                    <li class="about-me-li">Blender (enjoy)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+    <section id="tech-skills" class="section-tech-skills">
+  <h2 class="visually-hidden">Tech Skills</h2>
+  <div class="container-tech-skills">
+    <div class="marquee marquee-top">
+      <div class="marquee__inner">
+        <div class="marquee__line">
+          <span class="word black">HTML/CSS</span><span class="dot green">•</span>
+          <span class="word black">JAVASCRIPT</span><span class="dot green">•</span> <span
+            class="word black">REACT</span><span class="dot green">•</span>
+          <span class="word black">NODE.JS</span><span class="dot green">•</span>
+          <span class="word black">REACT NATIVE</span><span class="dot green">•</span>
+          <span class="word black">TYPESCRIPT</span><span class="dot green">•</span>
+
+          <span class="word black">HTML/CSS</span><span class="dot green">•</span>
+          <span class="word black">JAVASCRIPT</span><span class="dot green">•</span> <span
+            class="word black">REACT</span><span class="dot green">•</span>
+          <span class="word black">NODE.JS</span><span class="dot green">•</span>
+          <span class="word black">REACT NATIVE</span><span class="dot green">•</span>
+          <span class="word black">TYPESCRIPT</span><span class="dot green">•</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="marquee marquee-bottom">
+      <div class="marquee__inner">
+        <div class="marquee__line">
+          <span class="word green">HTML/CSS</span><span class="dot black">•</span>
+          <span class="word green">JAVASCRIPT</span><span class="dot black">•</span> <span
+            class="word green">REACT</span><span class="dot black">•</span>
+          <span class="word green">NODE.JS</span><span class="dot black">•</span>
+          <span class="word green">REACT NATIVE</span><span class="dot black">•</span>
+          <span class="word green">TYPESCRIPT</span><span class="dot black">•</span>
+
+          <span class="word green">HTML/CSS</span><span class="dot black">•</span>
+          <span class="word green">JAVASCRIPT</span><span class="dot black">•</span> <span
+            class="word green">REACT</span><span class="dot black">•</span>
+          <span class="word green">NODE.JS</span><span class="dot black">•</span>
+          <span class="word green">REACT NATIVE</span><span class="dot black">•</span>
+          <span class="word green">TYPESCRIPT</span><span class="dot black">•</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="my-projects" class="projects">
+  <div class="container">
+    <h2 class="projects-title">My <span>projects</span></h2>
+    <ul class="projects-list">
+      <li class="projects-item">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/wallet_desc@1x-CvRnACL7.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/wallet_desc@2x-DsfKCGib.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/wallet_tablet@1x-Bq5sQR-H.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/wallet_tablet@2x-DUL7oiY7.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/wallet_mobile@1x-fCMjJrr_.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/wallet_mobile@2x-Cn4OAyKc.jpg 2x"
+          />
+          <img
+            src="/js_115_Oleksii-Ivaniuta/assets/wallet_desc@2x-DsfKCGib.jpg"
+            alt="wallet"
+            width="1008"
+            height="580"
+          />
+        </picture>
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">Wallet webservice</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/greenharvest_desc@1x-DfMHjroM.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/greenharvest_desc@2x-CYYGbCZl.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/greenharvest_tablet@1x-DNwEZmFq.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/greenharvest_tablet@2x-BoMHkChZ.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="img/my-projects/greenharvestt_mobile@1x.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/greenharvest_mobile@2x-COufcrCv.jpg 2x"
+          />
+          <img
+            src="/js_115_Oleksii-Ivaniuta/assets/greenharvest_desc@2x-CYYGbCZl.jpg"
+            alt="greenharvest"
+            width="1008"
+            height="580"
+          />
+        </picture>
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">Green harvest webservice</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/english_desc@1x-Be1mG9h2.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/english_desc@2x-BQFHhU5c.jpg 2x"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/english_tablet@1x-CJFYkCEt.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/english_tablet@2x-CM3bs2Kb.jpg 2x"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="/js_115_Oleksii-Ivaniuta/assets/english_mobile@1x-BHXKxNXP.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/english_mobile@2x-BK4Z14tu.jpg 2x"
+          />
+          <img
+            src="/js_115_Oleksii-Ivaniuta/assets/english_desc@2x-BQFHhU5c.jpg"
+            alt="english"
+            width="1008"
+            height="580"
+          />
+        </picture>
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">English Exellence webservice</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/energyflow_desc@1x-taLzpKmg.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/energyflow_desc@1x-taLzpKmg.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/energyflow_desc@2x-C7fgWyOC.jpg 2x"
+          alt="energy flow webservice"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">energy flow webservice</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/power_desc@1x-Dt2lMgYg.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/power_desc@1x-Dt2lMgYg.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/power_desc@2x-DIDQ6avN.jpg 2x"
+          alt="power pulse webservice"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">power pulse webservice</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/fruitbox_desc@1x-628VEaJs.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/fruitbox_desc@1x-628VEaJs.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/fruitbox_desc@2x-ANB5CAsN.jpg 2x"
+          alt="fruitbox online store"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">fruitbox online store</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/jewelry_desc@1x-zFU27YfJ.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/jewelry_desc@1x-zFU27YfJ.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/jewelry_desc@2x-Ds39Jbjw.jpg 2x"
+          alt="chego jewelry website"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">chego jewelry websitee</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/mimino_desc@1x-CMNN5KoT.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/mimino_desc@1x-CMNN5KoT.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/mimino_desc@2x-DLKtm1Zz.jpg 2x"
+          alt="mimino website"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">mimino website</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/starlight_desc@1x-BTL5vzYd.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/starlight_desc@1x-BTL5vzYd.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/starlight_desc@2x-z9RKR1ZI.jpg 2x"
+          alt="starlight studio landing page"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">starlight studio landing page</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+      <li class="projects-item hidden">
+        <img
+          src="/js_115_Oleksii-Ivaniuta/assets/vyshyvanka_desc@1x-mRnultcT.jpg"
+          srcset="/js_115_Oleksii-Ivaniuta/assets/vyshyvanka_desc@1x-mRnultcT.jpg 1x, /js_115_Oleksii-Ivaniuta/assets/vyshyvanka_desc@2x-BYvK3uBB.jpg 2x"
+          alt="vyshyvanka vibes Landing Page"
+        />
+        <p class="project-desc">React, JavaScript, Node JS, Git</p>
+        <div class="projects-subtitle-wrapper">
+          <h3 class="projects-subtitle">vyshyvanka vibes Landing Page</h3>
+          <a
+            href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project"
+            target="_blank"
+          >
+            Visit
+            <svg class="project-icon">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#arrow-icon"></use>
+            </svg>
+          </a>
+        </div>
+      </li>
+    </ul>
+    <button class="load-btn" type="button"><span>Load more</span></button>
+  </div>
+</section>
+
+    <!-- section benefits -->
+<section id="benefits" class="benefits">
+  <div class="container">
+    <div class="ben-title ben-backgroung-img">
+      <h2 class="ben-title-text">
+        <span class="benefits-word">Benefits</span>
+        <span class="rest-of-title"> of working with me</span>
+      </h2>
+    </div>
+    <ul class="ben-content-all">
+      <li class="ben-content-list">
+        <a class="icon-sq" href="#">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-ben-user"></use>
+          </svg>
+        </a>
+        <div class="ben-expert">
+          <h3 class="ben-subtitle">Expertise</h3>
+          <p class="ben-subtitle-text">
+            With extensive experience in development, I have a deep
+            understanding of programming and website development.
+          </p>
+        </div>
+      </li>
+      <li class="ben-content-list">
+        <a class="icon-sq" href="#">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-ben-chat"></use>
+          </svg>
+        </a>
+        <div class="ben-chat">
+          <h3 class="ben-subtitle">Communication</h3>
+          <p class="ben-subtitle-text">
+            Understanding your needs and wants is my priority and I am always
+            available for discussions and open to corrections.
+          </p>
+        </div>
+      </li>
+      <li class="ben-content-list">
+        <a class="icon-sq" href="#">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-ben-art"></use>
+          </svg>
+        </a>
+        <div class="ben-art">
+          <h3 class="ben-subtitle">Art</h3>
+          <p class="ben-subtitle-text">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </div>
+      </li>
+      <li class="ben-content-list">
+        <a class="icon-sq" href="#">
+          <svg class="ben-icon" width="24" height="24">
+            <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-ben-time"></use>
+          </svg>
+        </a>
+        <div class="ben-urgent">
+          <h3 class="ben-subtitle">Urgent execution</h3>
+          <p class="ben-subtitle-text">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section id="faq" class="faq-section">
+  <div class="container faq-container">
+    <h2 class="faq-title">
+      FREQUENTLY ASKED <span class="faq-title-green">QUESTION</span>
+    </h2>
+    <ul class="accordion">
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">
+            PROGRAMMING LANGUAGES ARE MOST OFTEN USED IN YOUR PROJECT?
+          </p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">ARE THE DEADLINES FOR THE PROJECT?</p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">PAYMENT METHODS DO YOU ACCEPT?</p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">CAN I CONTACT YOU?</p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            In the field of web development, there are various technologies and
+            programming languages. Typically, this includes a combination of
+            frontend (client side) and backend (server side) languages.
+          </p>
+        </div>
+      </li>
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">YOU PROVIDE ADVICE OR SUPPORT?</p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            The terms of project implementation depend to a large extent on a
+            number of factors, such as the scope of the project, its complexity,
+            and the availability of resources. Determining exact deadlines is a
+            difficult task, and it usually occurs during the planning phase of
+            the project.
+          </p>
+        </div>
+      </li>
+      <li class="ac-item">
+        <div class="ac-question">
+          <p class="question">
+            WHAT DOES THE PROCESS OF DEVELOPING A SOFTWARE PRODUCT LOOK LIKE
+            FROM IDEA TO IMPLEMENTATION?
+          </p>
+          <button type="button" class="ac-trigger">
+            <svg class="trigger-icon" width="24" height="24">
+              <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-down"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="ac-answer">
+          <p class="answer">
+            Payment through credit and debit cards such as Visa, MasterCard,
+            specialized electronic payment systems such as PayPal, as well as
+            payments in cryptocurrencies such as Bitcoin, Ethereum and others.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+    <section id="reviews" class="reviews-section">
+  <div class="container">
+    <h2 class="reviews-header">Reviews</h2>
+    <div class="swiper">
+      <ul class="swiper-wrapper" id="reviews-list">
+
+      </ul>
+
+      <div class="reviews-navigation">
+        <button class="swiper-button-prev"></button>
+        <button class="swiper-button-next"></button>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="together-cont" id="work-together">
+  <div class="container work-together-container">
+    <h2 class="work-together-title work-together-bg">LET'S <span class="work-together-span">WORK TOGETHER</span></h2>
+    <div class="work-together-address-div">
+      <p class="work-together-par">Contact me to transform your ideas into exceptional solutions.</p>
+      <address class="work-together-address">
+        <ul class="work-together-ul">
+
+          <li class="work-together-li">
+            <a href="tel:+380904567890">
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-work-together-tel"></use>
+              </svg>+38 090 456 78 90</a>
+          </li>
+          <li class="work-together-li">
+            <a href="mailto:lloydjefferson@gmail.com">
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-work-together-mail"></use>
+              </svg>lloydjefferson@gmail.com</a>
+          </li>
+
+          <li class="work-together-li">
+            <a href="https://www.google.com/maps/place/New+York,+NY,+USA" target="_blank">
+              <svg class="work-together-svg" width="24" height="24">
+                <use href="/js_115_Oleksii-Ivaniuta/assets/sprite-BG8UK2gX.svg#icon-work-together-map"></use>
+              </svg>USA, New York</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    <div class="work-together-modal-form">
+      <form class="work-together-form" id="contactForm">
+        <label class="work-together-label">
+          <input class="work-together-input" type="email" name="user-email" placeholder="Your email*"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required />
+        </label>
+        <label>
+          <textarea class="work-together-input work-together-message" name="message" placeholder="Message"></textarea>
+        </label>
+        <button class="work-together-button" type="submit">
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css">
+<script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+
+
+ <div class="work-together-modal success-modal" id="successModal">
+    <div class="work-together-modal-content">
+        <span class="work-together-close-modal">&times;</span>
+        <h1 class="work-together-modal-par">Thank you for your interest in cooperation!</h1>
+        <p class="work-together-modal-par-par">The manager will contact you shortly to discuss further details and opportunities for cooperation. Please stay in touch.</p>
+    </div>
+</div>
+
+  </main>
+
+  <div id="footer" class="container">
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="bold">LLOYD</span><span class="green">JEFFERSON</span>.
+      </div>
+      <ul class="footer-socials">
+        <li>
+          <a href="https://www.instagram.com/goitclub/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/goITclub/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://github.com/Oleksii-Ivaniuta/NextGen-Crew-JS-Team-Project" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copyright">© Copyright 2024. Made by LloydJefferson</p>
+    </div>
+  </footer>
+</div>
+
+</body>
+
+</html>
